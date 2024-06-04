@@ -22,10 +22,11 @@ pip install -r requirements.txt
 3. Build ASTRA-Sim, Chakra, Polymath
 
 ```bash
+cd astra-sim
 ./build/astra_analytical/build.sh
 cd extern/graph_frontend/chakra
 pip install -e .
-cd ../../../execution_engine/polymath
+cd ../../../../execution_engine/polymath
 pip install -e .
 cd ../..
 ```
