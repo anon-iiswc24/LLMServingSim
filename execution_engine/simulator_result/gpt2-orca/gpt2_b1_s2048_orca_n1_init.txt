@@ -1,0 +1,602 @@
+ORCA		model_parallel_NPU_group: 1
+599
+Layername                        comp_time     input_loc   input_size  weight_loc  weight_size output_loc  output_size comm_type   comm_size   misc        
+elem_gather1_0                   917           LOCAL       4096        REMOTE      77194752    REMOTE      6291456     NONE        0           NONE        
+elem_add3d3d2_1                  17631         LOCAL       6291456     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d1_2                 14384         LOCAL       3145728     REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_sub3d3d2_3                  392           LOCAL       3149824     REMOTE      0           REMOTE      3145730     NONE        0           NONE        
+elem_pow3d3_4                    74418         LOCAL       3145730     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d4_5                 14384         LOCAL       3145728     REMOTE      0           REMOTE      4098        NONE        0           NONE        
+elem_add3d_const5_6              311           LOCAL       4098        REMOTE      0           REMOTE      4096        NONE        0           NONE        
+elem_sqrt3d6_7                   323           LOCAL       4096        REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_div3d3d7_8                  660           LOCAL       3149824     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+elem_mul3d1d8_9                  16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+elem_add3d1d9_10                 16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+gemm1_11                         223825        LOCAL       3145728     REMOTE      3543552     REMOTE      9437184     NONE        0           NONE        
+ATTENTION 0                                                                                                                                                
+ATTENTION 1                                                                                                                                                
+ATTENTION 2                                                                                                                                                
+ATTENTION 3                                                                                                                                                
+ATTENTION 4                                                                                                                                                
+ATTENTION 5                                                                                                                                                
+ATTENTION 6                                                                                                                                                
+ATTENTION 7                                                                                                                                                
+ATTENTION 8                                                                                                                                                
+ATTENTION 9                                                                                                                                                
+ATTENTION 10                                                                                                                                               
+ATTENTION 11                                                                                                                                               
+ATTENTION 12                                                                                                                                               
+ATTENTION 13                                                                                                                                               
+ATTENTION 14                                                                                                                                               
+ATTENTION 15                                                                                                                                               
+ATTENTION END                                                                                                                                              
+gemm1_29                         75257         LOCAL       3145728     REMOTE      1181184     REMOTE      6291456     ALLREDUCE   6291456     NONE        
+elem_add3d3d3_30                 17631         LOCAL       6291456     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d1_31                14384         LOCAL       3145728     REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_sub3d3d2_32                 392           LOCAL       3149824     REMOTE      0           REMOTE      3145730     NONE        0           NONE        
+elem_pow3d3_33                   74418         LOCAL       3145730     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d4_34                14384         LOCAL       3145728     REMOTE      0           REMOTE      4098        NONE        0           NONE        
+elem_add3d_const5_35             311           LOCAL       4098        REMOTE      0           REMOTE      4096        NONE        0           NONE        
+elem_sqrt3d6_36                  323           LOCAL       4096        REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_div3d3d7_37                 660           LOCAL       3149824     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+elem_mul3d1d8_38                 16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+elem_add3d1d9_39                 16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+gemm1_40                         297561        LOCAL       3145728     REMOTE      4724736     REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const3_41             64819         LOCAL       12582914    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_pow3d4_42                   107186        LOCAL       12582914    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const5_43             64819         LOCAL       12582914    REMOTE      0           REMOTE      25165824    NONE        0           NONE        
+elem_add3d3d6_44                 70525         LOCAL       25165824    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const7_45             64819         LOCAL       12582914    REMOTE      0           REMOTE      12582912    NONE        0           NONE        
+elem_tanh3d8_46                  60227         LOCAL       12582912    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_add3d_const9_47             64819         LOCAL       12582914    REMOTE      0           REMOTE      25165824    NONE        0           NONE        
+elem_mul3d3d10_48                70525         LOCAL       25165824    REMOTE      0           REMOTE      12582912    NONE        0           NONE        
+gemm1_49                         298497        LOCAL       12582912    REMOTE      4720128     REMOTE      6291456     ALLREDUCE   6291456     NONE        
+elem_add3d3d3_50                 17631         LOCAL       6291456     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d1_51                14384         LOCAL       3145728     REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_sub3d3d2_52                 392           LOCAL       3149824     REMOTE      0           REMOTE      3145730     NONE        0           NONE        
+elem_pow3d3_53                   74418         LOCAL       3145730     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d4_54                14384         LOCAL       3145728     REMOTE      0           REMOTE      4098        NONE        0           NONE        
+elem_add3d_const5_55             311           LOCAL       4098        REMOTE      0           REMOTE      4096        NONE        0           NONE        
+elem_sqrt3d6_56                  323           LOCAL       4096        REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_div3d3d7_57                 660           LOCAL       3149824     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+elem_mul3d1d8_58                 16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+elem_add3d1d9_59                 16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+gemm1_60                         223825        LOCAL       3145728     REMOTE      3543552     REMOTE      9437184     NONE        0           NONE        
+ATTENTION 0                                                                                                                                                
+ATTENTION 1                                                                                                                                                
+ATTENTION 2                                                                                                                                                
+ATTENTION 3                                                                                                                                                
+ATTENTION 4                                                                                                                                                
+ATTENTION 5                                                                                                                                                
+ATTENTION 6                                                                                                                                                
+ATTENTION 7                                                                                                                                                
+ATTENTION 8                                                                                                                                                
+ATTENTION 9                                                                                                                                                
+ATTENTION 10                                                                                                                                               
+ATTENTION 11                                                                                                                                               
+ATTENTION 12                                                                                                                                               
+ATTENTION 13                                                                                                                                               
+ATTENTION 14                                                                                                                                               
+ATTENTION 15                                                                                                                                               
+ATTENTION END                                                                                                                                              
+gemm1_78                         75257         LOCAL       3145728     REMOTE      1181184     REMOTE      6291456     ALLREDUCE   6291456     NONE        
+elem_add3d3d3_79                 17631         LOCAL       6291456     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d1_80                14384         LOCAL       3145728     REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_sub3d3d2_81                 392           LOCAL       3149824     REMOTE      0           REMOTE      3145730     NONE        0           NONE        
+elem_pow3d3_82                   74418         LOCAL       3145730     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d4_83                14384         LOCAL       3145728     REMOTE      0           REMOTE      4098        NONE        0           NONE        
+elem_add3d_const5_84             311           LOCAL       4098        REMOTE      0           REMOTE      4096        NONE        0           NONE        
+elem_sqrt3d6_85                  323           LOCAL       4096        REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_div3d3d7_86                 660           LOCAL       3149824     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+elem_mul3d1d8_87                 16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+elem_add3d1d9_88                 16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+gemm1_89                         297561        LOCAL       3145728     REMOTE      4724736     REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const3_90             64819         LOCAL       12582914    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_pow3d4_91                   107186        LOCAL       12582914    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const5_92             64819         LOCAL       12582914    REMOTE      0           REMOTE      25165824    NONE        0           NONE        
+elem_add3d3d6_93                 70525         LOCAL       25165824    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const7_94             64819         LOCAL       12582914    REMOTE      0           REMOTE      12582912    NONE        0           NONE        
+elem_tanh3d8_95                  60227         LOCAL       12582912    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_add3d_const9_96             64819         LOCAL       12582914    REMOTE      0           REMOTE      25165824    NONE        0           NONE        
+elem_mul3d3d10_97                70525         LOCAL       25165824    REMOTE      0           REMOTE      12582912    NONE        0           NONE        
+gemm1_98                         298497        LOCAL       12582912    REMOTE      4720128     REMOTE      6291456     ALLREDUCE   6291456     NONE        
+elem_add3d3d3_99                 17631         LOCAL       6291456     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d1_100               14384         LOCAL       3145728     REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_sub3d3d2_101                392           LOCAL       3149824     REMOTE      0           REMOTE      3145730     NONE        0           NONE        
+elem_pow3d3_102                  74418         LOCAL       3145730     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d4_103               14384         LOCAL       3145728     REMOTE      0           REMOTE      4098        NONE        0           NONE        
+elem_add3d_const5_104            311           LOCAL       4098        REMOTE      0           REMOTE      4096        NONE        0           NONE        
+elem_sqrt3d6_105                 323           LOCAL       4096        REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_div3d3d7_106                660           LOCAL       3149824     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+elem_mul3d1d8_107                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+elem_add3d1d9_108                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+gemm1_109                        223825        LOCAL       3145728     REMOTE      3543552     REMOTE      9437184     NONE        0           NONE        
+ATTENTION 0                                                                                                                                                
+ATTENTION 1                                                                                                                                                
+ATTENTION 2                                                                                                                                                
+ATTENTION 3                                                                                                                                                
+ATTENTION 4                                                                                                                                                
+ATTENTION 5                                                                                                                                                
+ATTENTION 6                                                                                                                                                
+ATTENTION 7                                                                                                                                                
+ATTENTION 8                                                                                                                                                
+ATTENTION 9                                                                                                                                                
+ATTENTION 10                                                                                                                                               
+ATTENTION 11                                                                                                                                               
+ATTENTION 12                                                                                                                                               
+ATTENTION 13                                                                                                                                               
+ATTENTION 14                                                                                                                                               
+ATTENTION 15                                                                                                                                               
+ATTENTION END                                                                                                                                              
+gemm1_127                        75257         LOCAL       3145728     REMOTE      1181184     REMOTE      6291456     ALLREDUCE   6291456     NONE        
+elem_add3d3d3_128                17631         LOCAL       6291456     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d1_129               14384         LOCAL       3145728     REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_sub3d3d2_130                392           LOCAL       3149824     REMOTE      0           REMOTE      3145730     NONE        0           NONE        
+elem_pow3d3_131                  74418         LOCAL       3145730     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d4_132               14384         LOCAL       3145728     REMOTE      0           REMOTE      4098        NONE        0           NONE        
+elem_add3d_const5_133            311           LOCAL       4098        REMOTE      0           REMOTE      4096        NONE        0           NONE        
+elem_sqrt3d6_134                 323           LOCAL       4096        REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_div3d3d7_135                660           LOCAL       3149824     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+elem_mul3d1d8_136                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+elem_add3d1d9_137                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+gemm1_138                        297561        LOCAL       3145728     REMOTE      4724736     REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const3_139            64819         LOCAL       12582914    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_pow3d4_140                  107186        LOCAL       12582914    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const5_141            64819         LOCAL       12582914    REMOTE      0           REMOTE      25165824    NONE        0           NONE        
+elem_add3d3d6_142                70525         LOCAL       25165824    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const7_143            64819         LOCAL       12582914    REMOTE      0           REMOTE      12582912    NONE        0           NONE        
+elem_tanh3d8_144                 60227         LOCAL       12582912    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_add3d_const9_145            64819         LOCAL       12582914    REMOTE      0           REMOTE      25165824    NONE        0           NONE        
+elem_mul3d3d10_146               70525         LOCAL       25165824    REMOTE      0           REMOTE      12582912    NONE        0           NONE        
+gemm1_147                        298497        LOCAL       12582912    REMOTE      4720128     REMOTE      6291456     ALLREDUCE   6291456     NONE        
+elem_add3d3d3_148                17631         LOCAL       6291456     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d1_149               14384         LOCAL       3145728     REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_sub3d3d2_150                392           LOCAL       3149824     REMOTE      0           REMOTE      3145730     NONE        0           NONE        
+elem_pow3d3_151                  74418         LOCAL       3145730     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d4_152               14384         LOCAL       3145728     REMOTE      0           REMOTE      4098        NONE        0           NONE        
+elem_add3d_const5_153            311           LOCAL       4098        REMOTE      0           REMOTE      4096        NONE        0           NONE        
+elem_sqrt3d6_154                 323           LOCAL       4096        REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_div3d3d7_155                660           LOCAL       3149824     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+elem_mul3d1d8_156                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+elem_add3d1d9_157                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+gemm1_158                        223825        LOCAL       3145728     REMOTE      3543552     REMOTE      9437184     NONE        0           NONE        
+ATTENTION 0                                                                                                                                                
+ATTENTION 1                                                                                                                                                
+ATTENTION 2                                                                                                                                                
+ATTENTION 3                                                                                                                                                
+ATTENTION 4                                                                                                                                                
+ATTENTION 5                                                                                                                                                
+ATTENTION 6                                                                                                                                                
+ATTENTION 7                                                                                                                                                
+ATTENTION 8                                                                                                                                                
+ATTENTION 9                                                                                                                                                
+ATTENTION 10                                                                                                                                               
+ATTENTION 11                                                                                                                                               
+ATTENTION 12                                                                                                                                               
+ATTENTION 13                                                                                                                                               
+ATTENTION 14                                                                                                                                               
+ATTENTION 15                                                                                                                                               
+ATTENTION END                                                                                                                                              
+gemm1_176                        75257         LOCAL       3145728     REMOTE      1181184     REMOTE      6291456     ALLREDUCE   6291456     NONE        
+elem_add3d3d3_177                17631         LOCAL       6291456     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d1_178               14384         LOCAL       3145728     REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_sub3d3d2_179                392           LOCAL       3149824     REMOTE      0           REMOTE      3145730     NONE        0           NONE        
+elem_pow3d3_180                  74418         LOCAL       3145730     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d4_181               14384         LOCAL       3145728     REMOTE      0           REMOTE      4098        NONE        0           NONE        
+elem_add3d_const5_182            311           LOCAL       4098        REMOTE      0           REMOTE      4096        NONE        0           NONE        
+elem_sqrt3d6_183                 323           LOCAL       4096        REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_div3d3d7_184                660           LOCAL       3149824     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+elem_mul3d1d8_185                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+elem_add3d1d9_186                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+gemm1_187                        297561        LOCAL       3145728     REMOTE      4724736     REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const3_188            64819         LOCAL       12582914    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_pow3d4_189                  107186        LOCAL       12582914    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const5_190            64819         LOCAL       12582914    REMOTE      0           REMOTE      25165824    NONE        0           NONE        
+elem_add3d3d6_191                70525         LOCAL       25165824    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const7_192            64819         LOCAL       12582914    REMOTE      0           REMOTE      12582912    NONE        0           NONE        
+elem_tanh3d8_193                 60227         LOCAL       12582912    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_add3d_const9_194            64819         LOCAL       12582914    REMOTE      0           REMOTE      25165824    NONE        0           NONE        
+elem_mul3d3d10_195               70525         LOCAL       25165824    REMOTE      0           REMOTE      12582912    NONE        0           NONE        
+gemm1_196                        298497        LOCAL       12582912    REMOTE      4720128     REMOTE      6291456     ALLREDUCE   6291456     NONE        
+elem_add3d3d3_197                17631         LOCAL       6291456     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d1_198               14384         LOCAL       3145728     REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_sub3d3d2_199                392           LOCAL       3149824     REMOTE      0           REMOTE      3145730     NONE        0           NONE        
+elem_pow3d3_200                  74418         LOCAL       3145730     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d4_201               14384         LOCAL       3145728     REMOTE      0           REMOTE      4098        NONE        0           NONE        
+elem_add3d_const5_202            311           LOCAL       4098        REMOTE      0           REMOTE      4096        NONE        0           NONE        
+elem_sqrt3d6_203                 323           LOCAL       4096        REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_div3d3d7_204                660           LOCAL       3149824     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+elem_mul3d1d8_205                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+elem_add3d1d9_206                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+gemm1_207                        223825        LOCAL       3145728     REMOTE      3543552     REMOTE      9437184     NONE        0           NONE        
+ATTENTION 0                                                                                                                                                
+ATTENTION 1                                                                                                                                                
+ATTENTION 2                                                                                                                                                
+ATTENTION 3                                                                                                                                                
+ATTENTION 4                                                                                                                                                
+ATTENTION 5                                                                                                                                                
+ATTENTION 6                                                                                                                                                
+ATTENTION 7                                                                                                                                                
+ATTENTION 8                                                                                                                                                
+ATTENTION 9                                                                                                                                                
+ATTENTION 10                                                                                                                                               
+ATTENTION 11                                                                                                                                               
+ATTENTION 12                                                                                                                                               
+ATTENTION 13                                                                                                                                               
+ATTENTION 14                                                                                                                                               
+ATTENTION 15                                                                                                                                               
+ATTENTION END                                                                                                                                              
+gemm1_225                        75257         LOCAL       3145728     REMOTE      1181184     REMOTE      6291456     ALLREDUCE   6291456     NONE        
+elem_add3d3d3_226                17631         LOCAL       6291456     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d1_227               14384         LOCAL       3145728     REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_sub3d3d2_228                392           LOCAL       3149824     REMOTE      0           REMOTE      3145730     NONE        0           NONE        
+elem_pow3d3_229                  74418         LOCAL       3145730     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d4_230               14384         LOCAL       3145728     REMOTE      0           REMOTE      4098        NONE        0           NONE        
+elem_add3d_const5_231            311           LOCAL       4098        REMOTE      0           REMOTE      4096        NONE        0           NONE        
+elem_sqrt3d6_232                 323           LOCAL       4096        REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_div3d3d7_233                660           LOCAL       3149824     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+elem_mul3d1d8_234                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+elem_add3d1d9_235                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+gemm1_236                        297561        LOCAL       3145728     REMOTE      4724736     REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const3_237            64819         LOCAL       12582914    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_pow3d4_238                  107186        LOCAL       12582914    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const5_239            64819         LOCAL       12582914    REMOTE      0           REMOTE      25165824    NONE        0           NONE        
+elem_add3d3d6_240                70525         LOCAL       25165824    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const7_241            64819         LOCAL       12582914    REMOTE      0           REMOTE      12582912    NONE        0           NONE        
+elem_tanh3d8_242                 60227         LOCAL       12582912    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_add3d_const9_243            64819         LOCAL       12582914    REMOTE      0           REMOTE      25165824    NONE        0           NONE        
+elem_mul3d3d10_244               70525         LOCAL       25165824    REMOTE      0           REMOTE      12582912    NONE        0           NONE        
+gemm1_245                        298497        LOCAL       12582912    REMOTE      4720128     REMOTE      6291456     ALLREDUCE   6291456     NONE        
+elem_add3d3d3_246                17631         LOCAL       6291456     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d1_247               14384         LOCAL       3145728     REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_sub3d3d2_248                392           LOCAL       3149824     REMOTE      0           REMOTE      3145730     NONE        0           NONE        
+elem_pow3d3_249                  74418         LOCAL       3145730     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d4_250               14384         LOCAL       3145728     REMOTE      0           REMOTE      4098        NONE        0           NONE        
+elem_add3d_const5_251            311           LOCAL       4098        REMOTE      0           REMOTE      4096        NONE        0           NONE        
+elem_sqrt3d6_252                 323           LOCAL       4096        REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_div3d3d7_253                660           LOCAL       3149824     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+elem_mul3d1d8_254                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+elem_add3d1d9_255                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+gemm1_256                        223825        LOCAL       3145728     REMOTE      3543552     REMOTE      9437184     NONE        0           NONE        
+ATTENTION 0                                                                                                                                                
+ATTENTION 1                                                                                                                                                
+ATTENTION 2                                                                                                                                                
+ATTENTION 3                                                                                                                                                
+ATTENTION 4                                                                                                                                                
+ATTENTION 5                                                                                                                                                
+ATTENTION 6                                                                                                                                                
+ATTENTION 7                                                                                                                                                
+ATTENTION 8                                                                                                                                                
+ATTENTION 9                                                                                                                                                
+ATTENTION 10                                                                                                                                               
+ATTENTION 11                                                                                                                                               
+ATTENTION 12                                                                                                                                               
+ATTENTION 13                                                                                                                                               
+ATTENTION 14                                                                                                                                               
+ATTENTION 15                                                                                                                                               
+ATTENTION END                                                                                                                                              
+gemm1_274                        75257         LOCAL       3145728     REMOTE      1181184     REMOTE      6291456     ALLREDUCE   6291456     NONE        
+elem_add3d3d3_275                17631         LOCAL       6291456     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d1_276               14384         LOCAL       3145728     REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_sub3d3d2_277                392           LOCAL       3149824     REMOTE      0           REMOTE      3145730     NONE        0           NONE        
+elem_pow3d3_278                  74418         LOCAL       3145730     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d4_279               14384         LOCAL       3145728     REMOTE      0           REMOTE      4098        NONE        0           NONE        
+elem_add3d_const5_280            311           LOCAL       4098        REMOTE      0           REMOTE      4096        NONE        0           NONE        
+elem_sqrt3d6_281                 323           LOCAL       4096        REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_div3d3d7_282                660           LOCAL       3149824     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+elem_mul3d1d8_283                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+elem_add3d1d9_284                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+gemm1_285                        297561        LOCAL       3145728     REMOTE      4724736     REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const3_286            64819         LOCAL       12582914    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_pow3d4_287                  107186        LOCAL       12582914    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const5_288            64819         LOCAL       12582914    REMOTE      0           REMOTE      25165824    NONE        0           NONE        
+elem_add3d3d6_289                70525         LOCAL       25165824    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const7_290            64819         LOCAL       12582914    REMOTE      0           REMOTE      12582912    NONE        0           NONE        
+elem_tanh3d8_291                 60227         LOCAL       12582912    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_add3d_const9_292            64819         LOCAL       12582914    REMOTE      0           REMOTE      25165824    NONE        0           NONE        
+elem_mul3d3d10_293               70525         LOCAL       25165824    REMOTE      0           REMOTE      12582912    NONE        0           NONE        
+gemm1_294                        298497        LOCAL       12582912    REMOTE      4720128     REMOTE      6291456     ALLREDUCE   6291456     NONE        
+elem_add3d3d3_295                17631         LOCAL       6291456     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d1_296               14384         LOCAL       3145728     REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_sub3d3d2_297                392           LOCAL       3149824     REMOTE      0           REMOTE      3145730     NONE        0           NONE        
+elem_pow3d3_298                  74418         LOCAL       3145730     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d4_299               14384         LOCAL       3145728     REMOTE      0           REMOTE      4098        NONE        0           NONE        
+elem_add3d_const5_300            311           LOCAL       4098        REMOTE      0           REMOTE      4096        NONE        0           NONE        
+elem_sqrt3d6_301                 323           LOCAL       4096        REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_div3d3d7_302                660           LOCAL       3149824     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+elem_mul3d1d8_303                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+elem_add3d1d9_304                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+gemm1_305                        223825        LOCAL       3145728     REMOTE      3543552     REMOTE      9437184     NONE        0           NONE        
+ATTENTION 0                                                                                                                                                
+ATTENTION 1                                                                                                                                                
+ATTENTION 2                                                                                                                                                
+ATTENTION 3                                                                                                                                                
+ATTENTION 4                                                                                                                                                
+ATTENTION 5                                                                                                                                                
+ATTENTION 6                                                                                                                                                
+ATTENTION 7                                                                                                                                                
+ATTENTION 8                                                                                                                                                
+ATTENTION 9                                                                                                                                                
+ATTENTION 10                                                                                                                                               
+ATTENTION 11                                                                                                                                               
+ATTENTION 12                                                                                                                                               
+ATTENTION 13                                                                                                                                               
+ATTENTION 14                                                                                                                                               
+ATTENTION 15                                                                                                                                               
+ATTENTION END                                                                                                                                              
+gemm1_323                        75257         LOCAL       3145728     REMOTE      1181184     REMOTE      6291456     ALLREDUCE   6291456     NONE        
+elem_add3d3d3_324                17631         LOCAL       6291456     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d1_325               14384         LOCAL       3145728     REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_sub3d3d2_326                392           LOCAL       3149824     REMOTE      0           REMOTE      3145730     NONE        0           NONE        
+elem_pow3d3_327                  74418         LOCAL       3145730     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d4_328               14384         LOCAL       3145728     REMOTE      0           REMOTE      4098        NONE        0           NONE        
+elem_add3d_const5_329            311           LOCAL       4098        REMOTE      0           REMOTE      4096        NONE        0           NONE        
+elem_sqrt3d6_330                 323           LOCAL       4096        REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_div3d3d7_331                660           LOCAL       3149824     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+elem_mul3d1d8_332                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+elem_add3d1d9_333                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+gemm1_334                        297561        LOCAL       3145728     REMOTE      4724736     REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const3_335            64819         LOCAL       12582914    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_pow3d4_336                  107186        LOCAL       12582914    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const5_337            64819         LOCAL       12582914    REMOTE      0           REMOTE      25165824    NONE        0           NONE        
+elem_add3d3d6_338                70525         LOCAL       25165824    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const7_339            64819         LOCAL       12582914    REMOTE      0           REMOTE      12582912    NONE        0           NONE        
+elem_tanh3d8_340                 60227         LOCAL       12582912    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_add3d_const9_341            64819         LOCAL       12582914    REMOTE      0           REMOTE      25165824    NONE        0           NONE        
+elem_mul3d3d10_342               70525         LOCAL       25165824    REMOTE      0           REMOTE      12582912    NONE        0           NONE        
+gemm1_343                        298497        LOCAL       12582912    REMOTE      4720128     REMOTE      6291456     ALLREDUCE   6291456     NONE        
+elem_add3d3d3_344                17631         LOCAL       6291456     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d1_345               14384         LOCAL       3145728     REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_sub3d3d2_346                392           LOCAL       3149824     REMOTE      0           REMOTE      3145730     NONE        0           NONE        
+elem_pow3d3_347                  74418         LOCAL       3145730     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d4_348               14384         LOCAL       3145728     REMOTE      0           REMOTE      4098        NONE        0           NONE        
+elem_add3d_const5_349            311           LOCAL       4098        REMOTE      0           REMOTE      4096        NONE        0           NONE        
+elem_sqrt3d6_350                 323           LOCAL       4096        REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_div3d3d7_351                660           LOCAL       3149824     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+elem_mul3d1d8_352                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+elem_add3d1d9_353                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+gemm1_354                        223825        LOCAL       3145728     REMOTE      3543552     REMOTE      9437184     NONE        0           NONE        
+ATTENTION 0                                                                                                                                                
+ATTENTION 1                                                                                                                                                
+ATTENTION 2                                                                                                                                                
+ATTENTION 3                                                                                                                                                
+ATTENTION 4                                                                                                                                                
+ATTENTION 5                                                                                                                                                
+ATTENTION 6                                                                                                                                                
+ATTENTION 7                                                                                                                                                
+ATTENTION 8                                                                                                                                                
+ATTENTION 9                                                                                                                                                
+ATTENTION 10                                                                                                                                               
+ATTENTION 11                                                                                                                                               
+ATTENTION 12                                                                                                                                               
+ATTENTION 13                                                                                                                                               
+ATTENTION 14                                                                                                                                               
+ATTENTION 15                                                                                                                                               
+ATTENTION END                                                                                                                                              
+gemm1_372                        75257         LOCAL       3145728     REMOTE      1181184     REMOTE      6291456     ALLREDUCE   6291456     NONE        
+elem_add3d3d3_373                17631         LOCAL       6291456     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d1_374               14384         LOCAL       3145728     REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_sub3d3d2_375                392           LOCAL       3149824     REMOTE      0           REMOTE      3145730     NONE        0           NONE        
+elem_pow3d3_376                  74418         LOCAL       3145730     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d4_377               14384         LOCAL       3145728     REMOTE      0           REMOTE      4098        NONE        0           NONE        
+elem_add3d_const5_378            311           LOCAL       4098        REMOTE      0           REMOTE      4096        NONE        0           NONE        
+elem_sqrt3d6_379                 323           LOCAL       4096        REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_div3d3d7_380                660           LOCAL       3149824     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+elem_mul3d1d8_381                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+elem_add3d1d9_382                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+gemm1_383                        297561        LOCAL       3145728     REMOTE      4724736     REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const3_384            64819         LOCAL       12582914    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_pow3d4_385                  107186        LOCAL       12582914    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const5_386            64819         LOCAL       12582914    REMOTE      0           REMOTE      25165824    NONE        0           NONE        
+elem_add3d3d6_387                70525         LOCAL       25165824    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const7_388            64819         LOCAL       12582914    REMOTE      0           REMOTE      12582912    NONE        0           NONE        
+elem_tanh3d8_389                 60227         LOCAL       12582912    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_add3d_const9_390            64819         LOCAL       12582914    REMOTE      0           REMOTE      25165824    NONE        0           NONE        
+elem_mul3d3d10_391               70525         LOCAL       25165824    REMOTE      0           REMOTE      12582912    NONE        0           NONE        
+gemm1_392                        298497        LOCAL       12582912    REMOTE      4720128     REMOTE      6291456     ALLREDUCE   6291456     NONE        
+elem_add3d3d3_393                17631         LOCAL       6291456     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d1_394               14384         LOCAL       3145728     REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_sub3d3d2_395                392           LOCAL       3149824     REMOTE      0           REMOTE      3145730     NONE        0           NONE        
+elem_pow3d3_396                  74418         LOCAL       3145730     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d4_397               14384         LOCAL       3145728     REMOTE      0           REMOTE      4098        NONE        0           NONE        
+elem_add3d_const5_398            311           LOCAL       4098        REMOTE      0           REMOTE      4096        NONE        0           NONE        
+elem_sqrt3d6_399                 323           LOCAL       4096        REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_div3d3d7_400                660           LOCAL       3149824     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+elem_mul3d1d8_401                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+elem_add3d1d9_402                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+gemm1_403                        223825        LOCAL       3145728     REMOTE      3543552     REMOTE      9437184     NONE        0           NONE        
+ATTENTION 0                                                                                                                                                
+ATTENTION 1                                                                                                                                                
+ATTENTION 2                                                                                                                                                
+ATTENTION 3                                                                                                                                                
+ATTENTION 4                                                                                                                                                
+ATTENTION 5                                                                                                                                                
+ATTENTION 6                                                                                                                                                
+ATTENTION 7                                                                                                                                                
+ATTENTION 8                                                                                                                                                
+ATTENTION 9                                                                                                                                                
+ATTENTION 10                                                                                                                                               
+ATTENTION 11                                                                                                                                               
+ATTENTION 12                                                                                                                                               
+ATTENTION 13                                                                                                                                               
+ATTENTION 14                                                                                                                                               
+ATTENTION 15                                                                                                                                               
+ATTENTION END                                                                                                                                              
+gemm1_421                        75257         LOCAL       3145728     REMOTE      1181184     REMOTE      6291456     ALLREDUCE   6291456     NONE        
+elem_add3d3d3_422                17631         LOCAL       6291456     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d1_423               14384         LOCAL       3145728     REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_sub3d3d2_424                392           LOCAL       3149824     REMOTE      0           REMOTE      3145730     NONE        0           NONE        
+elem_pow3d3_425                  74418         LOCAL       3145730     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d4_426               14384         LOCAL       3145728     REMOTE      0           REMOTE      4098        NONE        0           NONE        
+elem_add3d_const5_427            311           LOCAL       4098        REMOTE      0           REMOTE      4096        NONE        0           NONE        
+elem_sqrt3d6_428                 323           LOCAL       4096        REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_div3d3d7_429                660           LOCAL       3149824     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+elem_mul3d1d8_430                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+elem_add3d1d9_431                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+gemm1_432                        297561        LOCAL       3145728     REMOTE      4724736     REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const3_433            64819         LOCAL       12582914    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_pow3d4_434                  107186        LOCAL       12582914    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const5_435            64819         LOCAL       12582914    REMOTE      0           REMOTE      25165824    NONE        0           NONE        
+elem_add3d3d6_436                70525         LOCAL       25165824    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const7_437            64819         LOCAL       12582914    REMOTE      0           REMOTE      12582912    NONE        0           NONE        
+elem_tanh3d8_438                 60227         LOCAL       12582912    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_add3d_const9_439            64819         LOCAL       12582914    REMOTE      0           REMOTE      25165824    NONE        0           NONE        
+elem_mul3d3d10_440               70525         LOCAL       25165824    REMOTE      0           REMOTE      12582912    NONE        0           NONE        
+gemm1_441                        298497        LOCAL       12582912    REMOTE      4720128     REMOTE      6291456     ALLREDUCE   6291456     NONE        
+elem_add3d3d3_442                17631         LOCAL       6291456     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d1_443               14384         LOCAL       3145728     REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_sub3d3d2_444                392           LOCAL       3149824     REMOTE      0           REMOTE      3145730     NONE        0           NONE        
+elem_pow3d3_445                  74418         LOCAL       3145730     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d4_446               14384         LOCAL       3145728     REMOTE      0           REMOTE      4098        NONE        0           NONE        
+elem_add3d_const5_447            311           LOCAL       4098        REMOTE      0           REMOTE      4096        NONE        0           NONE        
+elem_sqrt3d6_448                 323           LOCAL       4096        REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_div3d3d7_449                660           LOCAL       3149824     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+elem_mul3d1d8_450                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+elem_add3d1d9_451                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+gemm1_452                        223825        LOCAL       3145728     REMOTE      3543552     REMOTE      9437184     NONE        0           NONE        
+ATTENTION 0                                                                                                                                                
+ATTENTION 1                                                                                                                                                
+ATTENTION 2                                                                                                                                                
+ATTENTION 3                                                                                                                                                
+ATTENTION 4                                                                                                                                                
+ATTENTION 5                                                                                                                                                
+ATTENTION 6                                                                                                                                                
+ATTENTION 7                                                                                                                                                
+ATTENTION 8                                                                                                                                                
+ATTENTION 9                                                                                                                                                
+ATTENTION 10                                                                                                                                               
+ATTENTION 11                                                                                                                                               
+ATTENTION 12                                                                                                                                               
+ATTENTION 13                                                                                                                                               
+ATTENTION 14                                                                                                                                               
+ATTENTION 15                                                                                                                                               
+ATTENTION END                                                                                                                                              
+gemm1_470                        75257         LOCAL       3145728     REMOTE      1181184     REMOTE      6291456     ALLREDUCE   6291456     NONE        
+elem_add3d3d3_471                17631         LOCAL       6291456     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d1_472               14384         LOCAL       3145728     REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_sub3d3d2_473                392           LOCAL       3149824     REMOTE      0           REMOTE      3145730     NONE        0           NONE        
+elem_pow3d3_474                  74418         LOCAL       3145730     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d4_475               14384         LOCAL       3145728     REMOTE      0           REMOTE      4098        NONE        0           NONE        
+elem_add3d_const5_476            311           LOCAL       4098        REMOTE      0           REMOTE      4096        NONE        0           NONE        
+elem_sqrt3d6_477                 323           LOCAL       4096        REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_div3d3d7_478                660           LOCAL       3149824     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+elem_mul3d1d8_479                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+elem_add3d1d9_480                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+gemm1_481                        297561        LOCAL       3145728     REMOTE      4724736     REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const3_482            64819         LOCAL       12582914    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_pow3d4_483                  107186        LOCAL       12582914    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const5_484            64819         LOCAL       12582914    REMOTE      0           REMOTE      25165824    NONE        0           NONE        
+elem_add3d3d6_485                70525         LOCAL       25165824    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const7_486            64819         LOCAL       12582914    REMOTE      0           REMOTE      12582912    NONE        0           NONE        
+elem_tanh3d8_487                 60227         LOCAL       12582912    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_add3d_const9_488            64819         LOCAL       12582914    REMOTE      0           REMOTE      25165824    NONE        0           NONE        
+elem_mul3d3d10_489               70525         LOCAL       25165824    REMOTE      0           REMOTE      12582912    NONE        0           NONE        
+gemm1_490                        298497        LOCAL       12582912    REMOTE      4720128     REMOTE      6291456     ALLREDUCE   6291456     NONE        
+elem_add3d3d3_491                17631         LOCAL       6291456     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d1_492               14384         LOCAL       3145728     REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_sub3d3d2_493                392           LOCAL       3149824     REMOTE      0           REMOTE      3145730     NONE        0           NONE        
+elem_pow3d3_494                  74418         LOCAL       3145730     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d4_495               14384         LOCAL       3145728     REMOTE      0           REMOTE      4098        NONE        0           NONE        
+elem_add3d_const5_496            311           LOCAL       4098        REMOTE      0           REMOTE      4096        NONE        0           NONE        
+elem_sqrt3d6_497                 323           LOCAL       4096        REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_div3d3d7_498                660           LOCAL       3149824     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+elem_mul3d1d8_499                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+elem_add3d1d9_500                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+gemm1_501                        223825        LOCAL       3145728     REMOTE      3543552     REMOTE      9437184     NONE        0           NONE        
+ATTENTION 0                                                                                                                                                
+ATTENTION 1                                                                                                                                                
+ATTENTION 2                                                                                                                                                
+ATTENTION 3                                                                                                                                                
+ATTENTION 4                                                                                                                                                
+ATTENTION 5                                                                                                                                                
+ATTENTION 6                                                                                                                                                
+ATTENTION 7                                                                                                                                                
+ATTENTION 8                                                                                                                                                
+ATTENTION 9                                                                                                                                                
+ATTENTION 10                                                                                                                                               
+ATTENTION 11                                                                                                                                               
+ATTENTION 12                                                                                                                                               
+ATTENTION 13                                                                                                                                               
+ATTENTION 14                                                                                                                                               
+ATTENTION 15                                                                                                                                               
+ATTENTION END                                                                                                                                              
+gemm1_519                        75257         LOCAL       3145728     REMOTE      1181184     REMOTE      6291456     ALLREDUCE   6291456     NONE        
+elem_add3d3d3_520                17631         LOCAL       6291456     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d1_521               14384         LOCAL       3145728     REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_sub3d3d2_522                392           LOCAL       3149824     REMOTE      0           REMOTE      3145730     NONE        0           NONE        
+elem_pow3d3_523                  74418         LOCAL       3145730     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d4_524               14384         LOCAL       3145728     REMOTE      0           REMOTE      4098        NONE        0           NONE        
+elem_add3d_const5_525            311           LOCAL       4098        REMOTE      0           REMOTE      4096        NONE        0           NONE        
+elem_sqrt3d6_526                 323           LOCAL       4096        REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_div3d3d7_527                660           LOCAL       3149824     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+elem_mul3d1d8_528                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+elem_add3d1d9_529                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+gemm1_530                        297561        LOCAL       3145728     REMOTE      4724736     REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const3_531            64819         LOCAL       12582914    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_pow3d4_532                  107186        LOCAL       12582914    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const5_533            64819         LOCAL       12582914    REMOTE      0           REMOTE      25165824    NONE        0           NONE        
+elem_add3d3d6_534                70525         LOCAL       25165824    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const7_535            64819         LOCAL       12582914    REMOTE      0           REMOTE      12582912    NONE        0           NONE        
+elem_tanh3d8_536                 60227         LOCAL       12582912    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_add3d_const9_537            64819         LOCAL       12582914    REMOTE      0           REMOTE      25165824    NONE        0           NONE        
+elem_mul3d3d10_538               70525         LOCAL       25165824    REMOTE      0           REMOTE      12582912    NONE        0           NONE        
+gemm1_539                        298497        LOCAL       12582912    REMOTE      4720128     REMOTE      6291456     ALLREDUCE   6291456     NONE        
+elem_add3d3d3_540                17631         LOCAL       6291456     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d1_541               14384         LOCAL       3145728     REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_sub3d3d2_542                392           LOCAL       3149824     REMOTE      0           REMOTE      3145730     NONE        0           NONE        
+elem_pow3d3_543                  74418         LOCAL       3145730     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d4_544               14384         LOCAL       3145728     REMOTE      0           REMOTE      4098        NONE        0           NONE        
+elem_add3d_const5_545            311           LOCAL       4098        REMOTE      0           REMOTE      4096        NONE        0           NONE        
+elem_sqrt3d6_546                 323           LOCAL       4096        REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_div3d3d7_547                660           LOCAL       3149824     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+elem_mul3d1d8_548                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+elem_add3d1d9_549                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+gemm1_550                        223825        LOCAL       3145728     REMOTE      3543552     REMOTE      9437184     NONE        0           NONE        
+ATTENTION 0                                                                                                                                                
+ATTENTION 1                                                                                                                                                
+ATTENTION 2                                                                                                                                                
+ATTENTION 3                                                                                                                                                
+ATTENTION 4                                                                                                                                                
+ATTENTION 5                                                                                                                                                
+ATTENTION 6                                                                                                                                                
+ATTENTION 7                                                                                                                                                
+ATTENTION 8                                                                                                                                                
+ATTENTION 9                                                                                                                                                
+ATTENTION 10                                                                                                                                               
+ATTENTION 11                                                                                                                                               
+ATTENTION 12                                                                                                                                               
+ATTENTION 13                                                                                                                                               
+ATTENTION 14                                                                                                                                               
+ATTENTION 15                                                                                                                                               
+ATTENTION END                                                                                                                                              
+gemm1_568                        75257         LOCAL       3145728     REMOTE      1181184     REMOTE      6291456     ALLREDUCE   6291456     NONE        
+elem_add3d3d3_569                17631         LOCAL       6291456     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d1_570               14384         LOCAL       3145728     REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_sub3d3d2_571                392           LOCAL       3149824     REMOTE      0           REMOTE      3145730     NONE        0           NONE        
+elem_pow3d3_572                  74418         LOCAL       3145730     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d4_573               14384         LOCAL       3145728     REMOTE      0           REMOTE      4098        NONE        0           NONE        
+elem_add3d_const5_574            311           LOCAL       4098        REMOTE      0           REMOTE      4096        NONE        0           NONE        
+elem_sqrt3d6_575                 323           LOCAL       4096        REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_div3d3d7_576                660           LOCAL       3149824     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+elem_mul3d1d8_577                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+elem_add3d1d9_578                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+gemm1_579                        297561        LOCAL       3145728     REMOTE      4724736     REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const3_580            64819         LOCAL       12582914    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_pow3d4_581                  107186        LOCAL       12582914    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const5_582            64819         LOCAL       12582914    REMOTE      0           REMOTE      25165824    NONE        0           NONE        
+elem_add3d3d6_583                70525         LOCAL       25165824    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_mul3d_const7_584            64819         LOCAL       12582914    REMOTE      0           REMOTE      12582912    NONE        0           NONE        
+elem_tanh3d8_585                 60227         LOCAL       12582912    REMOTE      0           REMOTE      12582914    NONE        0           NONE        
+elem_add3d_const9_586            64819         LOCAL       12582914    REMOTE      0           REMOTE      25165824    NONE        0           NONE        
+elem_mul3d3d10_587               70525         LOCAL       25165824    REMOTE      0           REMOTE      12582912    NONE        0           NONE        
+gemm1_588                        298497        LOCAL       12582912    REMOTE      4720128     REMOTE      6291456     ALLREDUCE   6291456     NONE        
+elem_add3d3d3_589                17631         LOCAL       6291456     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d1_590               14384         LOCAL       3145728     REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_sub3d3d2_591                392           LOCAL       3149824     REMOTE      0           REMOTE      3145730     NONE        0           NONE        
+elem_pow3d3_592                  74418         LOCAL       3145730     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+reduce_mean3d4_593               14384         LOCAL       3145728     REMOTE      0           REMOTE      4098        NONE        0           NONE        
+elem_add3d_const5_594            311           LOCAL       4098        REMOTE      0           REMOTE      4096        NONE        0           NONE        
+elem_sqrt3d6_595                 323           LOCAL       4096        REMOTE      0           REMOTE      3149824     NONE        0           NONE        
+elem_div3d3d7_596                660           LOCAL       3149824     REMOTE      0           REMOTE      3145728     NONE        0           NONE        
+elem_mul3d1d8_597                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        
+elem_add3d1d9_598                16846         LOCAL       3145728     REMOTE      1536        REMOTE      3145728     NONE        0           NONE        

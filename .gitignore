@@ -1,0 +1,32 @@
+# macOS
+.DS_Store
+._*
+
+# CMake
+cmake-build-debug/
+compile_commands.json
+
+# JetBrains
+.idea/
+
+# Analytical Model build and result files
+astra-sim/build/astra_analytical/build/
+astra-sim/build/astra_analytical/result/
+astra-sim/build/astra_garnet/build/
+astra-sim/build/astra_garnet/result/
+
+# python cache
+*.pyc
+
+# debug tests
+*_test.txt
+
+# Large ONNX files
+*.onnx
+*.weight
+*.bias
+_Constant_attr__value
+
+
+# log is not needed
+log.csv

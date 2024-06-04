@@ -1,0 +1,22 @@
+TENSOR			
+19		
+Layername       comp_time       input_loc   input_size  weight_loc  weight_size output_loc  output_size comm_type       comm_size   misc						
+Word_Embed	300             REMOTE      0           REMOTE      0           REMOTE      0           ALLGATHER       8388608     NONE
+Pos_Embed	300             REMOTE      0           REMOTE      0           REMOTE      0           NONE            0           NONE
+Layernorm1_1    300             REMOTE      0           REMOTE      0           REMOTE      0           NONE            0           NONE
+Q1              3145728         REMOTE      0           REMOTE      0           REMOTE      0           NONE	        0           NONE
+K1              3145728         REMOTE      0           REMOTE      0           REMOTE      0           NONE	        0           STORE_K
+V1              3145728         REMOTE      0           REMOTE      0           REMOTE      0           NONE	        0           STORE_V
+QK1             3145728         REMOTE      0           REMOTE      0           REMOTE      0           NONE	        0           LOAD_K
+softmax1        590976          REMOTE      0           REMOTE      0           REMOTE      0           NONE	        0           NONE
+KV1             3145728         REMOTE      0           REMOTE      0           REMOTE      0           NONE	        0           LOAD_V
+FF1_1           3145728         REMOTE      0           REMOTE      0           REMOTE      0           NONE	        0           NONE
+Residual1_1     590976          REMOTE      0           REMOTE      0           REMOTE      0           NONE	        0           NONE
+Layernorm1_2    300             REMOTE      0           REMOTE      0           REMOTE      0           NONE            0           NONE
+FF1_2           3145728         REMOTE      0           REMOTE      0           REMOTE      0           NONE	        0           NONE
+Activation      3145728         REMOTE      0           REMOTE      0           REMOTE      0           NONE	        0           NONE
+FF1_3           3145728         REMOTE      0           REMOTE      0           REMOTE      0           NONE	        0           NONE
+Residual1_2     590976          REMOTE      0           REMOTE      0           REMOTE      0           NONE	        0           NONE
+Layernorm_f     300             REMOTE      0           REMOTE      0           REMOTE      0           NONE            0           NONE
+FF_f            3145728         REMOTE      0           REMOTE      0           REMOTE      0           NONE	        0           NONE
+softmax_f       590976          REMOTE      0           REMOTE      0           REMOTE      0           NONE	        0           NONE

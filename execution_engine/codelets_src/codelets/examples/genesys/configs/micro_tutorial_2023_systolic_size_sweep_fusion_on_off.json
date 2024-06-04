@@ -1,0 +1,17 @@
+{
+    "IBUF_DEPTH": 32768,
+    "WBUF_DEPTH": 32768,
+    "OBUF_DEPTH": 8192,
+    "BBUF_DEPTH": 4096,
+    "PARAM_BUF_CHANNEL_BW": 512,
+    "DRAM_DEPTH": 50000000,
+    "SA_TILE_CONSTR": true,
+    "USE_QUANTIZATION": false,
+    "ALL_QUANT_OFF": true,
+    "SINGLE_PROGRAM_COMPILATION": false,
+    "DATAGEN": false,
+    "ARRAY_M": 4,
+    "ARRAY_N": 4,
+    "FUSION_CONSTRAINTS": false,
+    "FUSE_LAYERS": false
+}

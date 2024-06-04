@@ -1,0 +1,3 @@
+This is a branch of the gem5 simulator (http://www.gem5.org) for interfacing with ASTRA-sim which is a distrbuted Deep Learning Training simulator.
+This gem5_astra repository contains a modified version of the garnet2.0 network model that ASTRA-sim uses as its backend network simulator.
+More details can be found in the ASTRA-sim README file: https://github.com/astra-sim/astra-sim.
