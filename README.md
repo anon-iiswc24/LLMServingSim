@@ -70,3 +70,16 @@ Arguments of main.py
 | --pim_type | 'none', 'local', 'pool' | 'none' |  |
 | --sub_batch |  | False | Sub-batch Scheduling On/Off |
 | --dataset | 'dataset_path.tsv' | None | None: manually add requests in main.py |
+
+## Code References
+
+ASTRA-Sim: https://github.com/astra-sim/astra-sim
+
+Chakra: https://github.com/mlcommons/chakra-old
+
+Codelets: https://github.com/he-actlab/codelets.src
+
+Polymath: https://github.com/he-actlab/polymath
+
+
+
